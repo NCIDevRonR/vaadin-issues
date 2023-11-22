@@ -1,0 +1,5 @@
+Stack Trace Notes 11/22/2023
+
+JBoss 7.1 Deploy Fail Stack Trace-20231121-001.txt - Stack trace obtained when attempting to deploy vdn-hiya.war to our usual instance of JBoss.
+
+JBoss 7.1 Deploy Fail Stack Trace-20231122-001 - Stack trace obtained when attempting to deploy vdn-hiya.war to an instance of JBoss with Vaadin-centric modifications as recommended by ollitietavainen and others.

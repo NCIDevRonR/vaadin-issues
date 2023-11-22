@@ -1,0 +1,526 @@
+Calling "C:\pdmss_jboss_baseline\jboss-eap-7.1-vaadin\bin\standalone.conf.bat"
+Setting JAVA property to "C:\Program Files\Java\jdk-1.8\bin\java"
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: "C:\pdmss_jboss_baseline\jboss-eap-7.1-vaadin"
+
+  JAVA: "C:\Program Files\Java\jdk-1.8\bin\java"
+
+  JAVA_OPTS: "-Dprogram.name=standalone.bat -Xms4G -Xmx4G -XX:MetaspaceSize=192M -XX:MaxMetaspaceSize=512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -Xloggc:"C:\pdmss_jboss_baseline\jboss-eap-7.1-vaadin\standalone\log\gc.log" -XX:GCLogFileSize=3M -XX:-TraceClassUnloading"
+
+===============================================================================
+
+Listening for transport dt_socket at address: 8787
+11:09:13,685 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.4.Final-redhat-1
+11:09:14,084 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1-redhat-1
+11:09:14,314 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: JBoss EAP 7.1.3.GA (WildFly Core 3.0.16.Final-redhat-1) starting
+11:09:15,557 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+11:09:15,571 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.1.10.Final-redhat-1
+11:09:15,571 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+11:09:15,618 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+11:09:15,628 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.5.5.Final-redhat-1
+11:09:15,636 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.5.5.Final-redhat-1
+11:09:15,699 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+11:09:15,703 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+11:09:15,702 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.25.Final-redhat-1
+11:09:15,712 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+11:09:15,717 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+11:09:15,721 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+11:09:15,721 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+11:09:15,725 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-1
+11:09:15,763 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.9.Final-redhat-1)
+11:09:15,767 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+11:09:15,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 1.4.18.SP7-redhat-1 starting
+11:09:15,781 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+11:09:15,783 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+11:09:15,785 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+11:09:15,888 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 12.2)
+11:09:15,891 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = oracle
+11:09:15,899 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path 'C:\pdmss_jboss_baseline\jboss-eap-7.1-vaadin/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+11:09:16,082 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+11:09:16,084 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+11:09:16,084 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+11:09:16,120 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.7.Final-redhat-1
+11:09:16,127 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+11:09:16,136 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+11:09:16,192 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow AJP listener ajp listening on 192.168.0.110:8009
+11:09:16,195 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 192.168.0.110:8080
+11:09:16,212 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: JBoss EAP cumulative patch ID is: jboss-eap-7.1.3.CP, one-off patches include: none
+11:09:16,224 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory C:\pdmss_jboss_baseline\jboss-eap-7.1-vaadin\standalone\deployments
+11:09:16,273 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+11:09:16,329 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:/q302test]
+11:09:16,329 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+11:09:16,333 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:/ssdajsp77]
+11:09:16,334 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:/OracleDS]
+11:09:16,340 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:/ssdajava]
+11:09:16,592 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 192.168.0.110:8443
+11:09:16,678 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.10.Final-redhat-1 (Apache CXF 3.1.13.redhat-1)
+11:09:16,794 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+11:09:16,803 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.0.110:9990/management
+11:09:16,810 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.0.110:9990
+11:09:16,810 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.1.3.GA (WildFly Core 3.0.16.Final-redhat-1) started in 3570ms - Started 320 of 580 services (351 services are lazy, passive or on-demand)
+11:10:07,409 INFO  [org.jboss.as.repository] (External Management Request Threads -- 6) WFLYDR0001: Content added at location C:\pdmss_jboss_baseline\jboss-eap-7.1-vaadin\standalone\data\content\1f\b5393fca1d6df6e5cf734f768d1595ea3c575c\content
+11:10:07,442 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "vdn-hiya.war" (runtime-name: "vdn-hiya.war")
+11:10:13,715 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment vdn-hiya.war
+11:10:13,809 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.3.5.Final-redhat-2
+11:10:14,287 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.11.Final-redhat-1
+11:10:14,578 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.4.7 (redhat)
+11:10:14,914 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+11:10:15,797 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.springframework.http.server.reactive.AbstractListenerWriteProcessor in Module "deployment.vdn-hiya.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/AbstractListenerWriteProcessor (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Processor
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+        at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:358)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:437)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+
+11:10:15,830 WARN  [org.jboss.modules] (MSC service thread 1-5) Failed to define class org.springframework.http.server.reactive.AbstractListenerReadPublisher in Module "deployment.vdn-hiya.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/AbstractListenerReadPublisher (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Publisher
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+        at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:358)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:437)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+
+11:10:15,841 WARN  [org.jboss.modules] (MSC service thread 1-5) Failed to define class org.springframework.http.server.reactive.ServletServerHttpRequest$RequestBodyPublisher in Module "deployment.vdn-hiya.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpRequest$RequestBodyPublisher (Module "deployment.vdn-hiya.war" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerReadPublisher (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Publisher
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+
+11:10:15,825 WARN  [org.jboss.modules] (MSC service thread 1-3) Failed to define class org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HandlerResultSubscriber in Module "deployment.vdn-hiya.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletHttpHandlerAdapter$HandlerResultSubscriber (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Subscriber
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+
+11:10:15,847 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."vdn-hiya.war".component."org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener".WeldInstantiator: org.jboss.msc.service.StartException in service jboss.deployment.unit."vdn-hiya.war".component."org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener".WeldInstantiator: Failed to start service
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1978)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:184)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        ... 3 more
+Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpRequest$RequestBodyPublisher (Module "deployment.vdn-hiya.war" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerReadPublisher (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Publisher
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        ... 9 more
+
+11:10:15,832 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseBodyProcessor in Module "deployment.vdn-hiya.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpResponse$ResponseBodyProcessor (Module "deployment.vdn-hiya.war" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerWriteProcessor (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Processor
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+
+11:10:15,861 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."vdn-hiya.war".component."org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener".WeldInstantiator: org.jboss.msc.service.StartException in service jboss.deployment.unit."vdn-hiya.war".component."org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener".WeldInstantiator: Failed to start service
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1978)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:184)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        ... 3 more
+Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpResponse$ResponseBodyProcessor (Module "deployment.vdn-hiya.war" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerWriteProcessor (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Processor
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        ... 9 more
+
+11:10:15,856 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."vdn-hiya.war".component."org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener".WeldInstantiator: org.jboss.msc.service.StartException in service jboss.deployment.unit."vdn-hiya.war".component."org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener".WeldInstantiator: Failed to start service
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1978)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:750)
+Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:184)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:192)
+        at org.jboss.weld.resources.ClassTransformer.getEnhancedAnnotatedType(ClassTransformer.java:230)
+        at org.jboss.as.weld.injection.InjectionTargets.createInjectionTarget(InjectionTargets.java:60)
+        at org.jboss.as.weld.injection.WeldComponentService.start(WeldComponentService.java:120)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+        ... 3 more
+Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletHttpHandlerAdapter$HandlerResultSubscriber (Module "deployment.vdn-hiya.war" from Service Module Loader): org/reactivestreams/Subscriber
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+        at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+        at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+        at org.jboss.modules.Module.loadModuleClass(Module.java:714)
+        at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+        at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+        at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+        at java.lang.Class.getDeclaringClass0(Native Method)
+        at java.lang.Class.getDeclaringClass(Class.java:1235)
+        at java.lang.Class.getEnclosingClass(Class.java:1277)
+        at java.lang.Class.getSimpleBinaryName(Class.java:1443)
+        at java.lang.Class.isMemberClass(Class.java:1433)
+        at org.jboss.weld.util.reflection.Reflections.getNesting(Reflections.java:138)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:50)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.initParameters(BackedAnnotatedConstructor.java:28)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedCallable.<init>(BackedAnnotatedCallable.java:34)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.<init>(BackedAnnotatedConstructor.java:38)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedConstructor.of(BackedAnnotatedConstructor.java:32)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:168)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.computeValue(BackedAnnotatedType.java:161)
+        at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:58)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$EagerlyInitializedLazyValueHolder.<init>(BackedAnnotatedType.java:157)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors.<init>(BackedAnnotatedType.java:161)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.<init>(BackedAnnotatedType.java:62)
+        at org.jboss.weld.annotated.slim.backed.BackedAnnotatedType.of(BackedAnnotatedType.java:46)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:80)
+        at org.jboss.weld.resources.ClassTransformer$TransformClassToBackedAnnotatedType.apply(ClassTransformer.java:77)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:55)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache$1.apply(ReentrantMapBackedComputingCache.java:51)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:64)
+        at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:80)
+        at org.jboss.weld.resources.ClassTransformer.getBackedAnnotatedType(ClassTransformer.java:175)
+        ... 9 more
+
+11:10:15,952 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 6) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "vdn-hiya.war")]) - failure description: {"WFLYCTL0080: Failed services" => {
+    "jboss.deployment.unit.\"vdn-hiya.war\".component.\"org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener\".WeldInstantiator" => "Failed to start service
+    Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpResponse$ResponseBodyProcessor (Module \"deployment.vdn-hiya.war\" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerWriteProcessor (Module \"deployment.vdn-hiya.war\" from Service Module Loader): org/reactivestreams/Processor",
+    "jboss.deployment.unit.\"vdn-hiya.war\".component.\"org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener\".WeldInstantiator" => "Failed to start service
+    Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpRequest$RequestBodyPublisher (Module \"deployment.vdn-hiya.war\" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerReadPublisher (Module \"deployment.vdn-hiya.war\" from Service Module Loader): org/reactivestreams/Publisher",
+    "jboss.deployment.unit.\"vdn-hiya.war\".component.\"org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener\".WeldInstantiator" => "Failed to start service
+    Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletHttpHandlerAdapter$HandlerResultSubscriber (Module \"deployment.vdn-hiya.war\" from Service Module Loader): org/reactivestreams/Subscriber"
+}}
+11:10:15,955 ERROR [org.jboss.as.server] (External Management Request Threads -- 6) WFLYSRV0021: Deploy of deployment "vdn-hiya.war" was rolled back with the following failure message:
+{"WFLYCTL0080: Failed services" => {
+    "jboss.deployment.unit.\"vdn-hiya.war\".component.\"org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener\".WeldInstantiator" => "Failed to start service
+    Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpResponse$ResponseBodyProcessor (Module \"deployment.vdn-hiya.war\" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerWriteProcessor (Module \"deployment.vdn-hiya.war\" from Service Module Loader): org/reactivestreams/Processor",
+    "jboss.deployment.unit.\"vdn-hiya.war\".component.\"org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener\".WeldInstantiator" => "Failed to start service
+    Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletServerHttpRequest$RequestBodyPublisher (Module \"deployment.vdn-hiya.war\" from Service Module Loader): Failed to link org/springframework/http/server/reactive/AbstractListenerReadPublisher (Module \"deployment.vdn-hiya.war\" from Service Module Loader): org/reactivestreams/Publisher",
+    "jboss.deployment.unit.\"vdn-hiya.war\".component.\"org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener\".WeldInstantiator" => "Failed to start service
+    Caused by: org.jboss.weld.resources.spi.ResourceLoadingException: Error while loading class org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/springframework/http/server/reactive/ServletHttpHandlerAdapter$HandlerResultSubscriber (Module \"deployment.vdn-hiya.war\" from Service Module Loader): org/reactivestreams/Subscriber"
+}}
+11:10:16,564 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment vdn-hiya.war (runtime-name: vdn-hiya.war) in 607ms
