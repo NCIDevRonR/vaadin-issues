@@ -34,6 +34,7 @@ public class BackplaneView extends VerticalLayout {
 	MenuItem view;
 	MenuItem cityInfo;
 	MenuItem colleges;
+	MenuItem animals;
 	
 	Text selected = new Text("");
 	ComponentEventListener<ClickEvent<MenuItem>> listener;
@@ -50,20 +51,27 @@ public class BackplaneView extends VerticalLayout {
 		message = new Div(new Text("Clicked item: "), selected);
 		
 		view = menuBar.addItem("View", listener);
-		SubMenu viewMenu = view.getSubMenu();
-		cityInfo = viewMenu.addItem("City Info");
-		colleges = viewMenu.addItem("Colleges");
-		cityInfo.addClickListener(listener = e -> {
-			cityInfo.getUI().ifPresent(ui -> {
-				ui.navigate("cityInfo");
-			});
-		});
-
-		colleges.addClickListener(listener = e -> {
-			cityInfo.getUI().ifPresent(ui -> {
-				ui.navigate("colleges");
-			});
-		});
+//		SubMenu viewMenu = view.getSubMenu();
+//		cityInfo = viewMenu.addItem("City Info");
+//		colleges = viewMenu.addItem("Colleges");
+//		animals = viewMenu.addItem("Animals");
+//		cityInfo.addClickListener(listener = e -> {
+//			cityInfo.getUI().ifPresent(ui -> {
+//				ui.navigate("cityInfo");
+//			});
+//		});
+//
+//		colleges.addClickListener(listener = e -> {
+//			cityInfo.getUI().ifPresent(ui -> {
+//				ui.navigate("colleges");
+//			});
+//		});
+//
+//		animals.addClickListener(listener = e -> {
+//			cityInfo.getUI().ifPresent(ui -> {
+//				ui.navigate("animals");
+//			});
+//		});
 
 		content.setHeight("100px");
 		content.addClassName("scrollable-dialog-content");
@@ -74,7 +82,4 @@ public class BackplaneView extends VerticalLayout {
 		header1.add(menuBar);
 	}
 	
-	private void gotoPage(String pageURL) {
-		
-	}
 }

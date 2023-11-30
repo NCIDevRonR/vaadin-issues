@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.empowerai.entity.ListCrudEntity;
 import com.empowerai.service.ListCrudService;
-import com.empowerai.util.Utils.CITY_INFO_FIELD;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.grid.Grid;
@@ -45,7 +44,7 @@ public abstract class ListCrudGridPager extends VerticalLayout {
 			new HorizontalLayout(), new HorizontalLayout() }; // for each column's colSortButton and colFilterField.
 	protected Button colSortButton[] = new Button[] { new Button(), new Button(), new Button(), new Button() };
 	protected final String rowsPerPage[] = new String[] { "10", "20", "30" };
-	protected ComboBox<String> comboBox = new ComboBox<>();
+	protected ComboBox<String> comboBox = new ComboBox<>("Grid Rows");
 	protected TextField colFilterField[] = new TextField[] { new TextField(), new TextField(), new TextField(), new TextField() };
 
 	protected Button numberButtons[] = new Button[] { new Button("1"), new Button("2"), new Button("3"), new Button("4"),
